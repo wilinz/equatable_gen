@@ -80,3 +80,4 @@ pubspec.lock
 !equatable_gen/**/*.g.dart
 .lh
 test_project/**/gen/**
+needs_publishing.txt
