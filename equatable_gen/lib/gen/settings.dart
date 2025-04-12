@@ -20,17 +20,18 @@ class Settings implements SettingsInterface {
   factory Settings.fromJson(Map json) {
     final settings = _$SettingsFromJson(json);
 
-    final patterns = <String, List<String>>{};
+    final patternValidationLocations = <String, List<String>>{};
 
     for (var e in settings.exclude) {
-      patterns.putIfAbsent(e, () => []).add('exclude');
+      patternValidationLocations.putIfAbsent(e, () => []).add('exclude');
     }
     for (var e in settings.include) {
-      patterns.putIfAbsent(e, () => []).add('include');
+      patternValidationLocations.putIfAbsent(e, () => []).add('include');
     }
 
-    // make sure that the priorities patterns are valid regex
-    for (final MapEntry(key: pattern, value: locations) in patterns.entries) {
+    // make sure that the priorities patternValidationLocations are valid regex
+    for (final MapEntry(key: pattern, value: locations)
+        in patternValidationLocations.entries) {
       try {
         RegExp(pattern);
       } catch (error) {
