@@ -1,0 +1,17 @@
+targets:
+  $default:
+    builders:
+      equatable_gen:
+        enabled: true
+        options:
+          include_getters: false
+
+builders:
+  equatable_gen:
+    target: "equatable_gen"
+    import: "package:equatable_gen/equatable_gen.dart"
+    builder_factories: ["equatableGenerator"]
+    build_extensions: { ".dart": [".equatable_annotations.g.part"] }
+    auto_apply: dependents
+    build_to: cache
+    applies_builders: ["source_gen|combining_builder"]

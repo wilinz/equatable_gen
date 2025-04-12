@@ -50,5 +50,5 @@ generateFiles() {
 DIRS=('extends' 'mixin')
 CLAUSES=('extends Equatable' 'with EquatableMixin')
 
-generateFiles test_project/lib/base test_project/lib/gen false "${DIRS[@]}" "${CLAUSES[@]}"
-generateFiles test_project/test/base test_project/test/gen true "${DIRS[@]}" "${DIRS[@]}"
+generateFiles e2e_tests/lib/base e2e_tests/lib/gen false "${DIRS[@]}" "${CLAUSES[@]}" || exit 1
+generateFiles e2e_tests/test/base e2e_tests/test/gen true "${DIRS[@]}" "${DIRS[@]}" || exit 1

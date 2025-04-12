@@ -1,5 +1,4 @@
 [![Pub Package](https://img.shields.io/pub/v/equatable_annotations.svg)](https://pub.dev/packages/equatable_annotations)
-[![Pub Package](https://img.shields.io/pub/v/equatable_annotations.svg)](https://pub.dev/packages/equatable_gen)
 
 Provides [Dart Build System](https://pub.dev/packages/build) builder for generating `List<Object?> _$props` private extensions for classes annotated with [equatable_annotations](https://pub.dev/packages/equatable_annotations).
 
@@ -10,11 +9,6 @@ Provides [Dart Build System](https://pub.dev/packages/build) builder for generat
 - Add `equatable_annotations` to your `dependencies`
 - Add `equatable_gen` to your `dev_dependencies`
 - Add `build_runner` to your `dev_dependencies`
-
-### Add the `build.yaml` file
-
-````yaml
-
 
 ### Annotate your class with `@generateProps` annotation
 
@@ -33,7 +27,7 @@ class SomeClass extends Equatable {
   @override
   List<Object?> get props => _$props; //_$props will be generated
 }
-````
+```
 
 Make sure that you set the part file as in the example above `part 'your_file_name.g.dart';`.
 
@@ -110,7 +104,7 @@ _NOTE:_ If the props getter is not defined, the equatable*annotations will not g
 
 ## Inheritance
 
-If your class extends another class that uses Equatable, you can use the `@generateProps` annotation and equatable_gen will do the rest!
+If your class extends another class that uses Equatable, you can use the `@generateProps` annotation and equatable_annotations will do the rest!
 
 ```dart
 @generateProps

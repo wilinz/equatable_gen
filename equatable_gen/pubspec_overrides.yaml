@@ -1,0 +1,3 @@
+dependency_overrides:
+  equatable_annotations:
+    path: ../equatable_annotations

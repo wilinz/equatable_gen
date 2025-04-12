@@ -1,0 +1,5 @@
+dependency_overrides:
+  equatable_annotations:
+    path: ../equatable_annotations
+  equatable_gen:
+    path: ../equatable_gen

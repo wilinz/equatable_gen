@@ -1,26 +1,38 @@
 setup:
   - dart pub get --precompile
+  - dart pub global activate barreler
+
+barrel: barreler build
 
 build_runner:
   (aliases): br
   build:
     (aliases): b
-    (command): dart pub run build_runner build --delete-conflicting-outputs
+    (command): dart run build_runner build --delete-conflicting-outputs
 
   watch:
     (aliases): w
-    (command): dart pub run build_runner watch --delete-conflicting-outputs
+    (command): dart run build_runner watch --delete-conflicting-outputs
 
 _packages:
-  - autoequal
-  - autoequal_gen
+  - equatable_annotations
+  - equatable_gen
 
 format: cd {$_packages} && dart format .
 analyze: cd {$_packages} && dart analyze .
 
 test:
-  gen: cd autoequal_gen && sip test
-  e2e: cd e2e_project && sip test
+  gen: cd equatable_gen && sip test
+
+  e2e:
+    (command):
+      - sh scripts/create_tests.sh
+      - |
+        cd e2e_tests
+        {$build_runner:build}
+      - >
+        cd e2e_tests &&
+        dart test --test-randomize-ordering-seed=random
 
 publish:
   (bail):
@@ -31,27 +43,27 @@ publish:
     - "{$analyze}"
     - |
       # Update pubspec versions
-      DIR=autoequal_gen
+      DIR=equatable_gen
       {$publish:pubspec}
 
-      DIR=autoequal
+      DIR=equatable_annotations
       {$publish:pubspec}
 
     - |
       # Publishing to pub.dev
-      DIR=autoequal_gen
+      DIR=equatable_gen
       {$publish:_to-pub}
 
-      DIR=autoequal
+      DIR=equatable_annotations
       {$publish:_to-pub}
 
     - "{$publish:_commit}"
     - |
       # Tagging and pushing to origin
-      DIR=autoequal_gen
+      DIR=equatable_gen
       {$publish:tag}
 
-      DIR=autoequal
+      DIR=equatable_annotations
       {$publish:tag}
 
     - "{$publish:_push}"

@@ -1,5 +1,0 @@
-dependency_overrides:
-  autoequal:
-    path: ../autoequal
-  autoequal_gen:
-    path: ../autoequal_gen
