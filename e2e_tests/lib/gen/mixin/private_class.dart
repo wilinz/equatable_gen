@@ -6,7 +6,6 @@ class _PrivateClass with EquatableMixin {
   const _PrivateClass(
     this.one, {
     required this.two,
-    // ignore: unused_element
     this.three,
   });
 

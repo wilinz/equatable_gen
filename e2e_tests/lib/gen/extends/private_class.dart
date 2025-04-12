@@ -6,7 +6,6 @@ class _PrivateClass extends Equatable {
   const _PrivateClass(
     this.one, {
     required this.two,
-    // ignore: unused_element
     this.three,
   });
 
