@@ -8,6 +8,6 @@ See the [example] to understand how to configure your package.
 
 Please file feature requests and bugs at the [issue tracker][tracker].
 
-[example]: https://github.com/mrgnhnt96/equatable_annotations/blob/main/equatable_annotations/example/main.dart
-[tracker]: https://github.com/mrgnhnt96/equatable_annotations/issues
+[example]: https://github.com/mrgnhnt96/equatable_gen/blob/main/equatable_annotations/example/main.dart
+[tracker]: https://github.com/mrgnhnt96/equatable_gen/issues
 [equatable_gen]: https://pub.dev/packages/equatable_gen

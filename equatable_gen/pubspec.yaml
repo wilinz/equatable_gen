@@ -1,9 +1,18 @@
 name: equatable_gen
-description: |
-  Generate 'List<Object?> props' for all classes using equatable
+description: Automatically creates 'props' getters for classes using the equatable package.
 version: 0.9.5
-homepage: https://github.com/mrgnhnt96/equatable_annotations
-issue_tracker: https://github.com/mrgnhnt96/equatable_annotations/issues
+homepage: https://github.com/mrgnhnt96/equatable_gen/issues
+issue_tracker: https://github.com/mrgnhnt96/equatable_gen/issues/issues
+
+funding:
+  - https://github.com/sponsors/mrgnhnt96
+
+topics:
+  - equatable
+  - equality
+  - equals
+  - props
+  - generator
 
 environment:
   sdk: ">=3.0.0 <4.0.0"

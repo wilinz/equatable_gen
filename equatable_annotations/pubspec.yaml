@@ -1,10 +1,18 @@
 name: equatable_annotations
-description: |
-  Annotations for code generator 'equatable_gen' to simplify work with 'equatable'.
-  It will generate 'List<Object?> props' private extensions for all annotated classes.
+description: Provides annotations for the 'equatable_gen' code generator, used with the 'equatable' package
 version: 0.9.1
-homepage: https://github.com/mrgnhnt96/equatable_annotations
-issue_tracker: https://github.com/mrgnhnt96/equatable_annotations/issues
+homepage: https://github.com/mrgnhnt96/equatable_gen/issues
+issue_tracker: https://github.com/mrgnhnt96/equatable_gen/issues/issues
+
+funding:
+  - https://github.com/sponsors/mrgnhnt96
+
+topics:
+  - equatable
+  - equality
+  - equals
+  - props
+  - generator
 
 environment:
   sdk: ">=3.0.0 <4.0.0"
