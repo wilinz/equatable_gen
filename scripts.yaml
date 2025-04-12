@@ -37,8 +37,8 @@ test:
 publish:
   (bail):
   (command):
-    - "{$test:gen} --bail"
-    - "{$test:e2e} --bail"
+    - "{$test:gen}"
+    - "{$test:e2e}"
     - "{$format}"
     - "{$analyze}"
     - |
