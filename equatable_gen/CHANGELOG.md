@@ -1,3 +1,9 @@
+## 1.0.4 | 4.24.25
+
+### Enhancements
+
+- Update README
+
 ## 1.0.3 | 4.24.25
 
 ### Enhancements
