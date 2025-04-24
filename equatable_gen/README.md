@@ -1,5 +1,7 @@
-[![Pub Package](https://img.shields.io/pub/v/equatable_annotations.svg)](https://pub.dev/packages/equatable_annotations)
-[![Pub Package](https://img.shields.io/pub/v/equatable_annotations.svg)](https://pub.dev/packages/equatable_gen)
+| Package                 | Version                                                                                                                  |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| `equatable_annotations` | [![Pub Package](https://img.shields.io/pub/v/equatable_annotations.svg)](https://pub.dev/packages/equatable_annotations) |
+| `equatable_gen`         | [![Pub Package](https://img.shields.io/pub/v/equatable_gen.svg)](https://pub.dev/packages/equatable_gen)                 |
 
 [![GitHub stars](https://img.shields.io/github/stars/mrgnhnt96/equatable_gen?style=social)](https://github.com/mrgnhnt96/equatable_gen)
 

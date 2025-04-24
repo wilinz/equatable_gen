@@ -1,4 +1,7 @@
-[![Pub Package](https://img.shields.io/pub/v/equatable_annotations.svg)](https://pub.dev/packages/equatable_annotations)
+| Package                 | Version                                                                                                                  |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| `equatable_annotations` | [![Pub Package](https://img.shields.io/pub/v/equatable_annotations.svg)](https://pub.dev/packages/equatable_annotations) |
+| `equatable_gen`         | [![Pub Package](https://img.shields.io/pub/v/equatable_gen.svg)](https://pub.dev/packages/equatable_gen)                 |
 
 Defines the annotations used by [equatable_gen] to create code for the `props` getter
 
